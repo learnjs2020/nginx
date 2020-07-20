@@ -1,3 +1,4 @@
+git pull
 docker build -t some-content-nginx .
 docker stop some-nginx
 docker rm some-nginx
