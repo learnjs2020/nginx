@@ -12,4 +12,9 @@ docker network create \
 docker build -t some-content-nginx .
 docker stop some-nginx
 docker rm some-nginx
+
+docker stop local_proxy_container
+docker rm local_proxy_container
+
+
 docker run --name some-nginx --network network_ui_app -v "$(pwd)/html":/usr/share/nginx/html -p 80:80 -d some-content-nginx
