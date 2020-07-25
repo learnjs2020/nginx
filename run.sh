@@ -18,4 +18,3 @@ docker rm local_proxy_container
 
 
 docker run --name some-nginx --network network_ui_app -v "$(pwd)/html":/usr/share/nginx/html -p 80:80 -d some-content-nginx
-wget http://a001.local
