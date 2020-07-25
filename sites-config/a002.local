@@ -1,8 +1,7 @@
      server {
         listen       80;
         server_name  a002.local;
-        resolver 10.10.10.254 ipv6=off;
-  
+
         location / {
      
            # Proxy 
