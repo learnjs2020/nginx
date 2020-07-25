@@ -2,7 +2,6 @@
      server {
         listen       80;
         server_name  a001.local;
-        # resolver 127.0.0.1 ipv6=off;
   
         location / {
            proxy_cache                     off;
