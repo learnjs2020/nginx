@@ -5,3 +5,5 @@ RUN apt-get install -y wget
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY sites-config /etc/nginx/sites-config
 COPY html /usr/share/nginx/html
+
+CMD sleep 5 && wget http://a001.local
